@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  python_app:
+    image: skillbox-task5-app
+    build: .
+    volumes:
+      - .:/app
+
+# version версия синтаксиса docker-compose
+# services сервисы которые нужно запустить
+# python_app имя сервиса
+# image имя образа
+# build инструкция по сбору образа локально в текущую директорию
+# volumes проброс папок с хоста в контейнер
